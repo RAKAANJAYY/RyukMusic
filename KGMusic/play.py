@@ -137,8 +137,9 @@ async def playlist(client, message):
             msg,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu")],
-                    [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
             ),
         )
@@ -241,9 +242,10 @@ async def p_cb(b, cb):
         await cb.message.edit(
             msg,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu")],
-                    [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+               [
+                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
             ),
         )
@@ -469,10 +471,11 @@ async def play(_, message: Message):
                 f"**❌ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
             )
         keyboard = InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist")],
-                [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
-            ]
+               [
+                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
+                ]
         )
         file_name = get_file_name(audio)
         title = file_name
@@ -514,10 +517,11 @@ async def play(_, message: Message):
         dlurl = url
         dlurl = dlurl.replace("youtube", "youtubepp")
         keyboard = InlineKeyboardMarkup(
-            [
-                [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist")],
-                [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
-            ]
+               [
+                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
+                ]
         )
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)
@@ -605,9 +609,10 @@ async def play(_, message: Message):
             dlurl = url
             dlurl = dlurl.replace("youtube", "youtubepp")
             keyboard = InlineKeyboardMarkup(
-                [
-                    [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist")],
-                    [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
+               [
+                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
             )
             requested_by = message.from_user.first_name
@@ -711,10 +716,11 @@ async def lol_cb(b, cb):
     dlurl = url
     dlurl = dlurl.replace("youtube", "youtubepp")
     keyboard = InlineKeyboardMarkup(
-        [
-            [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist")],
-            [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
-        ]
+               [
+                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
+                ]
     )
     requested_by = useer_name
     await generate_cover(requested_by, title, views, duration, thumbnail)
@@ -859,10 +865,11 @@ async def ytplay(_, message: Message):
     durl = url
     durl = durl.replace("youtube", "youtubepp")
     keyboard = InlineKeyboardMarkup(
-        [
-            [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist")],
-            [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
-        ]
+               [
+                    [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
+                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
+                ]
     )
     requested_by = message.from_user.first_name
     await generate_cover(requested_by, title, views, duration, thumbnail)
