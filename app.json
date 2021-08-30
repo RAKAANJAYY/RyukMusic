@@ -1,0 +1,74 @@
+{
+    "name": "KGMusic",
+    "logo": "https://telegra.ph/file/6b14ab68ab3dfd4200ca5.jpg",
+    "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+    "keywords": ["bot music telegram", "bot musik", "cara membuat bot musik di telegram"],
+    "repository": "https://github.com/kalolonte1/KGMusic",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "Masukan String Session Pyrogram untuk assistant yang naik ke VCG",
+            "required": true
+        },
+        "OWNER": {
+          "description": "Masukan Username Telegram Anda Tanpa ==> @ <== [skip ini jika Anda tidak punya]",
+          "required": false,
+          "value": ""
+        },
+        "BOT_IMAGE": {
+          "description": "Masukan link gambar anda yang di upload ke telegra.ph [skip ini jika Anda tidak punya]",
+          "required": false,
+          "value": ""
+        },
+        "ARQ_API_KEY": {
+          "description": "Ambil api dari bot telegram » @ARQRobot",
+          "required": true
+        },    
+        "SUPPORT_GROUP": {
+          "description": "Grup dukungan MusicPlayer Anda Tanpa Menggunakan ==> @ <== [skip ini jika Anda tidak punya]",
+          "required": false,
+          "value": ""
+        },
+        "BOT_TOKEN": {
+            "description": "Masukan Bot Token dari @BotFather",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "Masukan Username Bot Anda Tanpa ==> @ <==",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "Masukan Nama Bot Anda",
+            "required": true
+        },
+        "ASSISTANT_NAME": {
+            "description": "Masukan Username Assistant Bot Anda Tanpa ==> @ <==",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Masukan APP ID Silahkan Ambil dari my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Masukan API HASH Silahkan Ambil dari my.telegram.org/apps",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "Daftar User ID pengguna dihitung sebagai admin di semua tempat (pemisah menggunakan space)",
+            "required": true
+        },
+        "DURATION_LIMIT": {
+            "description": "Batas durasi audio maksimal untuk download (minutes)",
+            "required": true,
+            "value": "60"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
