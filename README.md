@@ -3,7 +3,7 @@
 ![Repo 👁‍🗨](https://komarev.com/ghpvc/?username=kalolonte1&color=red&style=flat-square&label=DILIHAT+👁‍🗨)
 
 <p align="center">
-  <img src="https://telegra.ph/file/d90de32bd8864d38e2467.jpg">
+  <img src="https://telegra.ph/file/469201e866f29fb9c15b2.jpg">
 </p>
 Cara termudah untuk membuat Bot ini
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/kalolonte1/KGMusic"><img src="https://img.shields.io/badge/DEPLOY KE-HEROKU-blue?style=plastic&logo=heroku&logoColor=yellow"width="300"heigh="100" /></a></p>
