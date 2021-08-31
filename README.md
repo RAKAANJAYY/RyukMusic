@@ -4,6 +4,15 @@
 
 <p align="center">
   <img src="https://telegra.ph/file/469201e866f29fb9c15b2.jpg">
+
+<h4 align="center"> DISCLAIMER </p>
+
+```
+ᴋɢ ᴍᴜsɪᴄ ʙᴏᴛ ɪɴɪ ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀɴᴛᴜ ᴍᴇʀᴀᴍᴀɪᴋᴀɴ ɢʀᴜᴘ ᴋᴀʟɪᴀɴ
+          ᴊᴀɴɢᴀɴ ᴘᴇʀɴᴀʜ sᴘᴀᴍ ʟᴀɢᴜ/ᴘᴜᴛᴀʀ ғᴜʟʟ ᴀʟʙᴜᴍ
+```
+
+
 </p>
 Cara termudah untuk membuat Bot ini
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/kalolonte1/KGMusic"><img src="https://img.shields.io/badge/DEPLOY KE-HEROKU-blue?style=plastic&logo=heroku&logoColor=yellow"width="300"heigh="100" /></a></p>
