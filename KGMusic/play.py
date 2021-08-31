@@ -468,7 +468,7 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**⚠️ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
+                f"**📛 ʟᴀɢᴜ ᴅᴇɴɢᴀɴ ᴅᴜʀᴀsɪ ʟᴇʙɪʜ ᴅᴀʀɪ `{DURATION_LIMIT}` ᴍᴇɴɪᴛ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴅɪᴘᴜᴛᴀʀ!\n🎧 ʟᴀɢᴜ ʏᴀɴɢ ᴅɪ ᴍɪɴᴛᴀ ʙᴇʀᴅᴜʀᴀsɪ `{duration}`**"
             )
         keyboard = InlineKeyboardMarkup(
                [
@@ -510,7 +510,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**⚠️ Lagu tidak ditemukan**\nCoba masukan judul lagu yang lebih jelas"
+                "**📛 sᴀʏᴀ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴ ʟᴀɢᴜ**\nᴄᴏʙᴀ ᴍᴀsᴜᴋᴀɴ ᴊᴜᴅᴜʟ ʟᴀɢᴜ ᴅᴇɴɢᴀɴ ʟᴇʙɪʜ ᴊᴇʟᴀs"
             )
             print(str(e))
             return
@@ -560,7 +560,7 @@ async def play(_, message: Message):
             while j < 10:
                 toxxt += f"{emojilist[j]}: [{results[j]['title'][:25]}](https://youtube.com{results[j]['url_suffix']})\n"
                 toxxt += f"├ 💡 **ᴅᴜʀᴀᴛɪᴏɴ:** {results[j]['duration']}\n"
-                toxxt += f"└ ⚡ **ᴘᴏᴡᴇʀᴇᴅ ʙʏ:** [{bn}](t.me/{bu})\n\n"
+                toxxt += f"└ ⚡ **𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔:** [{bn}](t.me/{bu})\n\n"
                 j += 1
             keyboard = InlineKeyboardMarkup(
                 [
@@ -587,7 +587,7 @@ async def play(_, message: Message):
             return
             # 𝗚𝗢𝗛𝗔𝗡 𝗠𝗨𝗦𝗜𝗖 tolol
         except:
-            await lel.edit(f"**⚠️ Error Silahkan Lapor Ke @{SUPPORT_GROUP}**")
+            await lel.edit(f"**📛 Error Silahkan Lapor Ke @{SUPPORT_GROUP}**")
 
             # print(results)
             try:
@@ -602,7 +602,7 @@ async def play(_, message: Message):
                 views = results[0]["views"]
             except Exception as e:
                 await lel.edit(
-                    "**⚠️ lagu tidak ditemukan.** berikan nama lagu yang valid."
+                    "**📛 sᴀʏᴀ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴ ʟᴀɢᴜ.** berikan nama lagu yang valid."
                 )
                 print(str(e))
                 return
@@ -673,7 +673,7 @@ async def lol_cb(b, cb):
     try:
         x, query, useer_id = typed_.split("|")
     except:
-        await cb.message.edit("**⚠️ lagu tidak ditemukan**")
+        await cb.message.edit("**📛 sᴀʏᴀ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴ ʟᴀɢᴜ**")
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
@@ -701,7 +701,7 @@ async def lol_cb(b, cb):
             secmul *= 60
         if (dur / 60) > DURATION_LIMIT:
             await cb.message.edit(
-                f"**⚠️ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
+                f"**📛 ʟᴀɢᴜ ᴅᴇɴɢᴀɴ ᴅᴜʀᴀsɪ ʟᴇʙɪʜ ᴅᴀʀɪ `{DURATION_LIMIT}` ᴍᴇɴɪᴛ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴅɪᴘᴜᴛᴀʀ!\n🎧 ʟᴀɢᴜ ʏᴀɴɢ ᴅɪ ᴍɪɴᴛᴀ ʙᴇʀᴅᴜʀᴀsɪ `{duration}`**"
             )
             return
     except:
@@ -770,7 +770,7 @@ async def lol_cb(b, cb):
 @errors
 async def ytplay(_, message: Message):
     global que
-    lel = await message.reply("**🔃 ᴍᴇᴍᴘʀᴏsᴇs...**")
+    lel = await message.reply("⚡")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
     try:
@@ -846,7 +846,7 @@ async def ytplay(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "**⚠️ Lagu tidak ditemukan**\nCoba masukan judul lagu yang lebih jelas"
+            "**📛 sᴀʏᴀ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴍᴇɴᴇᴍᴜᴋᴀɴ ʟᴀɢᴜ**\nᴄᴏʙᴀ ᴍᴀsᴜᴋᴀɴ ᴊᴜᴅᴜʟ ʟᴀɢᴜ ᴅᴇɴɢᴀɴ ʟᴇʙɪʜ ᴊᴇʟᴀs"
         )
         print(str(e))
         return
@@ -857,7 +857,7 @@ async def ytplay(_, message: Message):
             secmul *= 60
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**⚠️ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
+                f"**📛 ʟᴀɢᴜ ᴅᴇɴɢᴀɴ ᴅᴜʀᴀsɪ ʟᴇʙɪʜ ᴅᴀʀɪ `{DURATION_LIMIT}` ᴍᴇɴɪᴛ ᴛɪᴅᴀᴋ ᴅᴀᴘᴀᴛ ᴅɪᴘᴜᴛᴀʀ!\n🎧 ʟᴀɢᴜ ʏᴀɴɢ ᴅɪ ᴍɪɴᴛᴀ ʙᴇʀᴅᴜʀᴀsɪ `{duration}`**"
             )
             return
     except:
