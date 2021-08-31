@@ -138,7 +138,7 @@ async def playlist(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
             ),
@@ -244,7 +244,7 @@ async def p_cb(b, cb):
             reply_markup=InlineKeyboardMarkup(
                [
                     [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
             ),
@@ -328,7 +328,7 @@ async def m_cb(b, cb):
              InlineKeyboardButton("⏸️", "puse"),
              InlineKeyboardButton("⏭️", "skip"),
              InlineKeyboardButton("⏹️", "leave")],
-            [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+            [InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
             [InlineKeyboardButton("ᴛᴜᴛᴜᴘ", "cls")],
         ]
     )
@@ -364,7 +364,7 @@ async def m_cb(b, cb):
                      InlineKeyboardButton("⏸️", "puse"),
                      InlineKeyboardButton("⏭️", "skip"),
                      InlineKeyboardButton("⏹️", "leave")],
-                    [InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    [InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", "cls")],
                 ]
             )
@@ -389,7 +389,7 @@ async def m_cb(b, cb):
 @errors
 async def play(_, message: Message):
     global que
-    lel = await message.reply("**🔄 ᴍᴇᴍᴘʀᴏsᴇs...**")
+    lel = await message.reply("**🤖 ᴍᴇᴍᴘʀᴏsᴇs...**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
     try:
@@ -468,12 +468,12 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"**❌ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
+                f"**⚠️ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
             )
         keyboard = InlineKeyboardMarkup(
                [
                     [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
         )
@@ -492,7 +492,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("**🎵 ᴍᴇᴍᴘʀᴏsᴇs ʟᴀɢᴜ...**")
+        await lel.edit("**🌀 ᴍᴇᴍᴘʀᴏsᴇs ʟᴀɢᴜ...**")
         ydl_opts = {
             "format": "bestaudio[ext=m4a]",
         }
@@ -510,7 +510,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             await lel.edit(
-                "**❌ Lagu tidak ditemukan**\nCoba masukan judul lagu yang lebih jelas"
+                "**⚠️ Lagu tidak ditemukan**\nCoba masukan judul lagu yang lebih jelas"
             )
             print(str(e))
             return
@@ -519,7 +519,7 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
                [
                     [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
         )
@@ -531,7 +531,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("**🎵 ᴍᴇᴍᴘʀᴏsᴇs ʟᴀɢᴜ...**")
+        await lel.edit("**🌀 ᴍᴇᴍᴘʀᴏsᴇs ʟᴀɢᴜ...**")
         ydl_opts = {
             "format": "bestaudio[ext=m4a]",
         }
@@ -559,8 +559,8 @@ async def play(_, message: Message):
             ]
             while j < 10:
                 toxxt += f"{emojilist[j]}: [{results[j]['title'][:25]}](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f"├ 💡 **Durasi:** {results[j]['duration']}\n"
-                toxxt += f"└ ⚡ **Didukung:** [{bn}](t.me/{bu})\n\n"
+                toxxt += f"├ 💡 **ᴅᴜʀᴀᴛɪᴏɴ:** {results[j]['duration']}\n"
+                toxxt += f"└ ⚡ **ᴘᴏᴡᴇʀᴇᴅ ʙʏ:** [{bn}](t.me/{bu})\n\n"
                 j += 1
             keyboard = InlineKeyboardMarkup(
                 [
@@ -574,7 +574,7 @@ async def play(_, message: Message):
                         InlineKeyboardButton("8️⃣", callback_data=f"plll 7|{query}|{user_id}"),
                         InlineKeyboardButton("9️⃣", callback_data=f"plll 8|{query}|{user_id}")],
                        [InlineKeyboardButton("🔟", callback_data=f"plll 9|{query}|{user_id}")],
-                       [InlineKeyboardButton(text="❌ ʙᴀᴛᴀʟ ❌", callback_data="cls")],
+                       [InlineKeyboardButton(text="ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
             )
 
@@ -587,7 +587,7 @@ async def play(_, message: Message):
             return
             # 𝗚𝗢𝗛𝗔𝗡 𝗠𝗨𝗦𝗜𝗖 tolol
         except:
-            await lel.edit(f"**❌ Error Silahkan Lapor Ke @{SUPPORT_GROUP}**")
+            await lel.edit(f"**⚠️ Error Silahkan Lapor Ke @{SUPPORT_GROUP}**")
 
             # print(results)
             try:
@@ -602,7 +602,7 @@ async def play(_, message: Message):
                 views = results[0]["views"]
             except Exception as e:
                 await lel.edit(
-                    "**❌ lagu tidak ditemukan.** berikan nama lagu yang valid."
+                    "**⚠️ lagu tidak ditemukan.** berikan nama lagu yang valid."
                 )
                 print(str(e))
                 return
@@ -611,7 +611,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
                [
                     [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
             )
@@ -673,7 +673,7 @@ async def lol_cb(b, cb):
     try:
         x, query, useer_id = typed_.split("|")
     except:
-        await cb.message.edit("**❌ lagu tidak ditemukan**")
+        await cb.message.edit("**⚠️ lagu tidak ditemukan**")
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
@@ -681,7 +681,7 @@ async def lol_cb(b, cb):
             "anda bukan orang yang meminta untuk memutar lagu ini!", show_alert=True
         )
         return
-    await cb.message.edit("**🔄 ᴍᴇᴍᴘʀᴏsᴇs...**")
+    await cb.message.edit("**🤖 ᴍᴇᴍᴘʀᴏsᴇs...**")
     x = int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -701,7 +701,7 @@ async def lol_cb(b, cb):
             secmul *= 60
         if (dur / 60) > DURATION_LIMIT:
             await cb.message.edit(
-                f"**❌ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
+                f"**⚠️ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
             )
             return
     except:
@@ -718,7 +718,7 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
                [
                     [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
     )
@@ -828,7 +828,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("**🎵 ᴍᴇᴍᴘʀᴏsᴇs ʟᴀɢᴜ...**")
+    await lel.edit("**🌀 ᴍᴇᴍᴘʀᴏsᴇs ʟᴀɢᴜ...**")
     ydl_opts = {
         "format": "bestaudio[ext=m4a]",
     }
@@ -846,7 +846,7 @@ async def ytplay(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "**❌ Lagu tidak ditemukan**\nCoba masukan judul lagu yang lebih jelas"
+            "**⚠️ Lagu tidak ditemukan**\nCoba masukan judul lagu yang lebih jelas"
         )
         print(str(e))
         return
@@ -857,7 +857,7 @@ async def ytplay(_, message: Message):
             secmul *= 60
         if (dur / 60) > DURATION_LIMIT:
             await lel.edit(
-                f"**❌ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
+                f"**⚠️ Lagu dengan durasi lebih dari `{DURATION_LIMIT}` menit tidak dapat diputar!\n🎧 Lagu yang di minta berdurasi `{duration}`**"
             )
             return
     except:
@@ -867,7 +867,7 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
                [
                     [InlineKeyboardButton("ᴍᴇɴᴜ", callback_data="menu"),
-                    InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
+                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
                 ]
     )
