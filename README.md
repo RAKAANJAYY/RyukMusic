@@ -1,4 +1,4 @@
-<h1 align="center"><img src="./resources/extras/kgg.gif" width="20px">    𝙆𝙂 𝙈𝙐𝙎𝙄𝘾    <img src="./resources/extras/kgg.gif" width="20px"></h1>
+<h1 align="center"><img src="./KG/kgg.gif" width="20px">    𝙆𝙂 𝙈𝙐𝙎𝙄𝘾    <img src="./KG/kgg.gif" width="20px"></h1>
 
 
 ![Repo 👁‍🗨](https://komarev.com/ghpvc/?username=kalolonte1&color=red&style=flat-square&label=DILIHAT+👁‍🗨)
