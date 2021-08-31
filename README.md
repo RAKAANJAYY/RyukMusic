@@ -5,7 +5,7 @@
 <p align="center">
   <img src="https://telegra.ph/file/469201e866f29fb9c15b2.jpg">
 
-<h4 align="center"> DISCLAIMER </p>
+<h4 align="center"> ⛔ɪɴғᴏʀᴍᴀsɪ⛔ </p>
 
 ```
 ᴋɢ ᴍᴜsɪᴄ ʙᴏᴛ ɪɴɪ ᴅɪʙᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴀɴᴛᴜ ᴍᴇʀᴀᴍᴀɪᴋᴀɴ ɢʀᴜᴘ ᴋᴀʟɪᴀɴ
