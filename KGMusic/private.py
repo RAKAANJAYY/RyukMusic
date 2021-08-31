@@ -30,7 +30,7 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rakasupport"),
                 ],
                 [
-                    InlineKeyboardButton(text="ʙᴀɴᴛᴜᴀɴ", callback_data="helps+1"),
+                    InlineKeyboardButton(text="📚 ᴄᴏᴍᴍᴀɴᴅs", callback_data="helps+1"),
                     InlineKeyboardButton(
                         "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/knsgnwn"
                     ),
