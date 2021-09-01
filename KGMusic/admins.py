@@ -37,7 +37,7 @@ async def pause(_, message: Message):
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
         await message.reply_text(
-            "**⏸️ ʟᴀɢᴜ ᴅɪᴊᴇᴅᴀ.**\n\n• ᴜɴᴛᴜᴋ ᴍᴇʟᴀɴᴊᴜᴛᴋᴀɴ ᴘᴇᴍᴜᴛᴀʀᴀɴ,ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ » /resume."
+            "**⏸️ Music paused!**\n\n💡 For resuming the song, use command » /resume"
         )
 
 
@@ -52,7 +52,7 @@ async def resume(_, message: Message):
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
         await message.reply_text(
-            "**⚡ ᴍᴇʟᴀɴᴊᴜᴛᴋᴀɴ ᴘᴇᴍᴜᴛᴀʀᴀɴ ʟᴀɢᴜ**\n\n• ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴇᴅᴀ ᴘᴇᴍᴜᴛᴀʀᴀɴ,ɢᴜɴᴀᴋᴀɴ ᴘᴇʀɪɴᴛᴀʜ » /pause"
+            "**⚡ Music resumed!**\n\n💡 For end the song, use command » /end"
         )
 
 
@@ -69,7 +69,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("**✅ ᴜsᴇʀʙᴏᴛ ᴛᴇʟᴀʜ ᴛᴇʀᴘᴜᴛᴜs ᴅᴀʀɪ ᴏʙʀᴏʟᴀɴ.**")
+        await message.reply_text("**⏹️ Streaming ended**\n\n• Assistant has been disconnected from voice chat group")
 
 
 @Client.on_message(command(["skip", f"skip@{BOT_USERNAME}"]) & other_filters)
@@ -94,5 +94,5 @@ async def skip(_, message: Message):
     if not qeue:
         return
     await message.reply_text(
-        f"**⏭️ ᴍᴇʟᴇᴡᴀᴛɪ ʟᴀɢᴜ:** {skip[0]}\n**▶️ sᴇᴋᴀʀᴀɴɢ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ:** {qeue[0][0]}"
+        f"💡 You jump to the next song queue..\n┈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┈**\n➠ skipped :** {skip[0]}\n**⚡ now playing :** {qeue[0][0]}"
     )
