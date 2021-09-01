@@ -9,7 +9,6 @@ import requests
 from helpers.decorators import authorized_users_only, errors
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import Client, filters
-from pyrogram import CallbackQuery
 from pyrogram.errors import UserAlreadyParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
@@ -630,7 +629,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
             reply_markup=keyboard,
         )
 
@@ -650,7 +649,7 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}",
+            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}",
             reply_markup=keyboard,
         )
 
@@ -658,7 +657,7 @@ async def play(_, message: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}",
+            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}",
         )
         os.remove("final.png")
         return await lel.delete()
@@ -741,7 +740,7 @@ async def lol_cb(b, cb):
         await b.send_photo(
             chat_id,
             photo="final.png",
-            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -886,7 +885,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -903,7 +902,7 @@ async def ytplay(_, message: Message):
     await message.reply_photo(
         photo="final.png",
         caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** `Sedang Memutar`\n"
-        + f"**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}",
+        + f"**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}",
         reply_markup=keyboard,
     )
     os.remove("final.png")
