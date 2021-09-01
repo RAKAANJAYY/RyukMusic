@@ -14,7 +14,9 @@ async def start_(client: Client, message: Message):
         caption=f"""<b>👋🏻 ʜᴀʟʟᴏ {message.from_user.mention}
 ⚡ sᴀʏᴀ ᴀᴅᴀʟᴀʜ [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 
-🤖 sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴄᴀɴɢɢɪʜ ʏᴀɴɢ ᴀᴋᴀɴ ᴍᴇʀɪᴀʜᴋᴀɴ ɢʀᴏᴜᴘ ᴀɴᴅᴀ!</b>""",
+💡 sᴀʏᴀ ᴀᴅᴀʟᴀʜ ʙᴏᴛ ᴄᴀɴɢɢɪʜ ʏᴀɴɢ ᴀᴋᴀɴ ᴍᴇʀɪᴀʜᴋᴀɴ ɢʀᴏᴜᴘ ᴀɴᴅᴀ!
+
+❓ ᴊɪᴋᴀ ᴋᴀʟɪᴀɴ ᴛɪᴅᴀᴋ ᴍᴇɴɢᴇʀᴛɪ sɪʟᴀᴋᴀɴ ᴋʟɪᴄᴋ ᴘᴇʀɪɴᴛᴀʜ » 📚 ᴄᴏᴍᴍᴀɴᴅs « ᴀᴛᴀᴜ ᴘᴇʀɪɴᴛᴀʜ `/help`</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -30,7 +32,7 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rakasupport"),
                 ],
                 [
-                    InlineKeyboardButton(text="📚 ᴄᴏᴍᴍᴀɴᴅs", callback_data="helps+1"),
+                    InlineKeyboardButton(text="📚 ᴄᴏᴍᴍᴀɴᴅs", url=f"https://telegra.ph/KG-Music-08-23"),
                     InlineKeyboardButton(
                         "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/knsgnwn"
                     ),
