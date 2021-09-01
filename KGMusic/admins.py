@@ -22,7 +22,7 @@ async def update_admin(client, message):
         new_ads.append(u.user.id)
     a[message.chat.id] = new_ads
     await message.reply_text(
-        "⚙️ Bot reloaded correctly!\n\n• The Admin list has been updated."
+        "✅ Bot reloaded correctly!\n\n• The Admin list has been updated."
     )
 
 
