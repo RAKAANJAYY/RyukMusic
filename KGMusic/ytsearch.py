@@ -20,7 +20,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 async def ytsearch(_, message: Message):
     try:
         if len(message.command) < 2:
-            await message.reply_text("**/search enter video title!**")
+            await message.reply_text("**enter the title of the video clearly!**\n**Example »** /search partai perido remix\n\n**💡 Subs Channel :** @rakasupport")
             return
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("🕵🏻‍♂️ **search videos**")
