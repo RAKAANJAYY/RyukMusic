@@ -629,7 +629,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »`{position}`«",
             reply_markup=keyboard,
         )
 
@@ -740,7 +740,7 @@ async def lol_cb(b, cb):
         await b.send_photo(
             chat_id,
             photo="final.png",
-            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »`{position}`«",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -885,7 +885,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »`{position}`«",
             reply_markup=keyboard,
         )
         os.remove("final.png")
