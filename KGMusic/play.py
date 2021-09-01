@@ -389,7 +389,7 @@ async def m_cb(b, cb):
 @errors
 async def play(_, message: Message):
     global que
-    lel = await message.reply("**🔄 Processing...**")
+    lel = await message.reply("**⚡ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴...**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
     try:
@@ -492,7 +492,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("**🔄 processing songs..**")
+        await lel.edit("**⚡ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗦𝗼𝗻𝗴𝘀..**")
         ydl_opts = {
             "format": "bestaudio[ext=m4a]",
         }
@@ -531,7 +531,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("**🔄 processing songs..**")
+        await lel.edit("**⚡ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗦𝗼𝗻𝗴𝘀..**")
         ydl_opts = {
             "format": "bestaudio[ext=m4a]",
         }
@@ -629,7 +629,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"**🏷 ᴊᴜᴅᴜʟ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀsɪ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Antrian Ke {position}\n**🎧 Permintaan:** {message.from_user.mention}",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
             reply_markup=keyboard,
         )
 
@@ -649,7 +649,7 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption=f"**🏷 ᴊᴜᴅᴜʟ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀsɪ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 Permintaan:** {message.from_user.mention}",
+            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}",
             reply_markup=keyboard,
         )
 
@@ -657,7 +657,7 @@ async def play(_, message: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"**🏷 ᴊᴜᴅᴜʟ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀsɪ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 Permintaan:** {message.from_user.mention}",
+            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Memutar\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}",
         )
         os.remove("final.png")
         return await lel.delete()
@@ -681,7 +681,7 @@ async def lol_cb(b, cb):
             "anda bukan orang yang meminta untuk memutar lagu ini!", show_alert=True
         )
         return
-    await cb.message.edit("**🔄 Processing...**")
+    await cb.message.edit("**⚡ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴...**")
     x = int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -740,7 +740,7 @@ async def lol_cb(b, cb):
         await b.send_photo(
             chat_id,
             photo="final.png",
-            caption=f"**🏷 ᴊᴜᴅᴜʟ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀsɪ:** {duration}\n**💡 sᴛᴀᴛᴜs:** Antrian Ke {position}\n**🎧 Permintaan:** {r_by.mention}",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -760,7 +760,7 @@ async def lol_cb(b, cb):
         await b.send_photo(
             chat_id,
             photo="final.png",
-            caption=f"**🏷 ᴊᴜᴅᴜʟ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀsɪ:** {duration}\n**💡 sᴛᴀᴛᴜs:** `Sedang Memutar`\n**🎧 Permintaan:** {r_by.mention}",
+            caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** `Sedang Memutar`\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {r_by.mention}",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -828,7 +828,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("**🔄 processing songs..**")
+    await lel.edit("**⚡ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗦𝗼𝗻𝗴𝘀..**")
     ydl_opts = {
         "format": "bestaudio[ext=m4a]",
     }
@@ -885,8 +885,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption=f"**🏷 ᴊᴜᴅᴜʟ:** [{title[:25]}]({url})\n**⏱️ ᴅᴜʀᴀsɪ:** {duration}\n**💡 sᴛᴀᴛᴜs:** `Antrian Ke {position}`\n"
-            + f"**🎧 Permintaan** {message.from_user.mention}",
+            caption=f"**💡 Track added to the queue**\n\n**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}\n\n**🔢 ᴛʀᴀᴄᴋ ᴘᴏsɪᴛɪᴏɴ:** »` {position} `«",
             reply_markup=keyboard,
         )
         os.remove("final.png")
@@ -902,8 +901,8 @@ async def ytplay(_, message: Message):
     callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
     await message.reply_photo(
         photo="final.png",
-        caption=f"**🏷 ᴊᴜᴅᴜʟ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀsɪ:** {duration}\n**💡 sᴛᴀᴛᴜs:** `Sedang Memutar`\n"
-        + f"**🎧 Permintaan:** {message.from_user.mention}",
+        caption=f"**🏷 ᴛɪᴛʟᴇ:** [{title[:25]}...]({url})\n**⏱️ ᴅᴜʀᴀᴛɪᴏɴ:** {duration}\n**💡 sᴛᴀᴛᴜs:** `Sedang Memutar`\n"
+        + f"**🎧 ʀᴇϙᴜᴇsᴛ ʙʏ:** {message.from_user.mention}",
         reply_markup=keyboard,
     )
     os.remove("final.png")
