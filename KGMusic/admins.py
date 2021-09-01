@@ -33,7 +33,7 @@ async def pause(_, message: Message):
     if (message.chat.id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[message.chat.id] == "paused"
     ):
-        await message.reply_text("⚠️ **No song is playing!**")
+        await message.reply_text("📛 **No song is playing!**")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
         await message.reply_text(
@@ -48,7 +48,7 @@ async def resume(_, message: Message):
     if (message.chat.id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[message.chat.id] == "playing"
     ):
-        await message.reply_text("⚠️ **Can't find the currently paused song!**")
+        await message.reply_text("📛 **Can't find the currently paused song!**")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
         await message.reply_text(
@@ -61,7 +61,7 @@ async def resume(_, message: Message):
 @authorized_users_only
 async def stop(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("⚠️ **No song is playing!**")
+        await message.reply_text("📛 **No song is playing!**")
     else:
         try:
             callsmusic.queues.clear(message.chat.id)
@@ -69,7 +69,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("**⏹️ Streaming ended**\n\n• Assistant has been disconnected from voice chat group")
+        await message.reply_text("**✅ Streaming ended**\n\n• Assistant has been disconnected from voice chat group")
 
 
 @Client.on_message(command(["skip", f"skip@{BOT_USERNAME}"]) & other_filters)
@@ -78,7 +78,7 @@ async def stop(_, message: Message):
 async def skip(_, message: Message):
     global que
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("⚠️ **No songs in queue!**")
+        await message.reply_text("📛 **No songs in queue!**")
     else:
         callsmusic.queues.task_done(message.chat.id)
 
@@ -94,5 +94,5 @@ async def skip(_, message: Message):
     if not qeue:
         return
     await message.reply_text(
-        f"💡 You jump to the next song queue..\n┈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┈**\n➠ skipped :** {skip[0]}\n**⚡ now playing :** {qeue[0][0]}"
+        f"**💡 You jump to the next song queue..**\n┈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┈**\n➠ skipped :** {skip[0]}\n**⚡ now playing :** {qeue[0][0]}"
     )
