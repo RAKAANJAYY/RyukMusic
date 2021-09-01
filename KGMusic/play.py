@@ -9,6 +9,7 @@ import requests
 from helpers.decorators import authorized_users_only, errors
 from PIL import Image, ImageDraw, ImageFont
 from pyrogram import Client, filters
+from pyrogram import CallbackQuery
 from pyrogram.errors import UserAlreadyParticipant
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
