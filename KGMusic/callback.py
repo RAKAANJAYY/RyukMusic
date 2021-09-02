@@ -25,9 +25,8 @@ async def cbguide(_, query: CallbackQuery):
 async def cbstart(_, query: CallbackQuery):
   await query.edit_message_text(f"👋 **Hai!!Saya Adalah 𝙆𝙂𝙎𝙩𝙧𝙚𝙖𝙢𝙑𝙞𝙙𝙚𝙤**\n\n⚡ **Saya dibuat untuk melakukan streaming video dalam obrolan video grup dengan mudah..**\n\n❓ **Untuk mengetahui cara menggunakan saya, silakan tekan tombol bantuan di bawah ini** 👇🏻",
                     reply_markup=InlineKeyboardMarkup(
-                       [[
-                          InlineKeyboardButton(
-                             "➕ᴛᴀᴍʙᴀʜᴋᴀɴ sᴀʏᴀ ᴋᴇ ɢʀᴏᴜᴘ➕", url=f"https://t.me/KGvidstream_bot?startgroup=true")
+                        [[InlineKeyboardButton(
+                             "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/knsgnwn")
                        ],[
                           InlineKeyboardButton(
                              "ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup"),
@@ -35,9 +34,7 @@ async def cbstart(_, query: CallbackQuery):
                              "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rakasupport")
                        ],[
                           InlineKeyboardButton(
-                             "ɪɴғᴏ", callback_data="cbinfo"),
-                          InlineKeyboardButton(
-                             "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/knsgnwn")
+                             "ɪɴғᴏ", callback_data="cbinfo")
                        ]]
                     ))
 
