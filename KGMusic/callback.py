@@ -23,8 +23,8 @@ async def cbguide(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-  await query.edit_message_text(f"👋 𝗪𝗲𝗹𝗰𝗼𝗺𝗲** {message.from_user.mention}
-⚡ **[{BOT_NAME}](https://t.me/{BOT_USERNAME})** 𝙒𝙞𝙡𝙡 𝙋𝙡𝙖𝙮 𝙏𝙝𝙚 𝙎𝙤𝙣𝙜 𝙔𝙤𝙪 𝙒𝙖𝙣𝙩, 𝙉𝙤𝙩 𝙊𝙣𝙡𝙮 𝙏𝙝𝙖𝙩 𝙄 𝘼𝙡𝙨𝙤 𝙃𝙖𝙫𝙚 𝘼 𝙑𝙞𝙙𝙚𝙤 𝙎𝙩𝙧𝙚𝙖𝙢 𝙁𝙚𝙖𝙩𝙪𝙧𝙚!
+  await query.edit_message_text(f"👋 𝗪𝗲𝗹𝗰𝗼𝗺𝗲
+⚡ **[ᏦᏀ ᗰᑌᔑᏆᑕ](https://t.me/KGSuperbot)** 𝙒𝙞𝙡𝙡 𝙋𝙡𝙖𝙮 𝙏𝙝𝙚 𝙎𝙤𝙣𝙜 𝙔𝙤𝙪 𝙒𝙖𝙣𝙩, 𝙉𝙤𝙩 𝙊𝙣𝙡𝙮 𝙏𝙝𝙖𝙩 𝙄 𝘼𝙡𝙨𝙤 𝙃𝙖𝙫𝙚 𝘼 𝙑𝙞𝙙𝙚𝙤 𝙎𝙩𝙧𝙚𝙖𝙢 𝙁𝙚𝙖𝙩𝙪𝙧𝙚!
 
 💡 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 ᴄᴏᴍᴍᴀɴᴅs « !**
 
@@ -35,7 +35,7 @@ async def cbstart(_, query: CallbackQuery):
                 [
                     InlineKeyboardButton(
                         "➕ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴏᴜᴘ ➕",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        url=f"https://t.me/KGSuperbot?startgroup=true",
                     )
                 ],
                 [
