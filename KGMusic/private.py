@@ -37,6 +37,9 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton("ɪɴғᴏ ᴠɪᴅsᴛʀᴇᴀᴍ", callback_data="cbinfo"
                     ),
                 ],
+                [
+                    InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/knsgnwn"),
+                ],
             ]
         ),
     )
