@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, Chat, CallbackQuery
 
 from config import ASSISTANT_NAME as an
 from config import BOT_IMAGE, BOT_NAME, BOT_USERNAME, OWNER, SUPPORT_GROUP
@@ -33,7 +33,7 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rakasupport"),
                 ],
                 [
-                    InlineKeyboardButton(text="📚 ᴄᴏᴍᴍᴀɴᴅs", url=f"https://telegra.ph/KG-Music-08-23"),
+                    InlineKeyboardButton("ɪɴғᴏ", callback_data="cbinfo"),
                     InlineKeyboardButton(
                         "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/knsgnwn"
                     ),
