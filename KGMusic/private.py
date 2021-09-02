@@ -12,7 +12,7 @@ async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/c32918f8d474f43d7cfb0.png",
         caption=f"""<b>**👋 𝗪𝗲𝗹𝗰𝗼𝗺𝗲** {message.from_user.mention}
-⚡ **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 !**
+⚡ **[{BOT_NAME}](https://t.me/{BOT_USERNAME})** 𝙒𝙞𝙡𝙡 𝙋𝙡𝙖𝙮 𝙏𝙝𝙚 𝙎𝙤𝙣𝙜 𝙔𝙤𝙪 𝙒𝙖𝙣𝙩, 𝙉𝙤𝙩 𝙊𝙣𝙡𝙮 𝙏𝙝𝙖𝙩 𝙄 𝘼𝙡𝙨𝙤 𝙃𝙖𝙫𝙚 𝘼 𝙑𝙞𝙙𝙚𝙤 𝙎𝙩𝙧𝙚𝙖𝙢 𝙁𝙚𝙖𝙩𝙪𝙧𝙚 !
 
 💡 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 ᴄᴏᴍᴍᴀɴᴅs « !**
 
@@ -33,9 +33,8 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rakasupport"),
                 ],
                 [
-                    InlineKeyboardButton("ɪɴғᴏ", callback_data="cbinfo"),
-                    InlineKeyboardButton(
-                        "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/knsgnwn"
+                    InlineKeyboardButton("ᴄᴀʀᴀ ᴠɪᴅsᴛʀᴇᴀᴍ", callback_data="cbguide"),
+                    InlineKeyboardButton("ɪɴғᴏ ᴠɪᴅsᴛʀᴇᴀᴍ", callback_data="cbinfo"),
                     ),
                 ],
             ]
