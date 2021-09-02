@@ -23,20 +23,38 @@ async def cbguide(_, query: CallbackQuery):
 
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
-  await query.edit_message_text(f"👋 **Hai!!Saya Adalah 𝙆𝙂𝙎𝙩𝙧𝙚𝙖𝙢𝙑𝙞𝙙𝙚𝙤**\n\n⚡ **Saya dibuat untuk melakukan streaming video dalam obrolan video grup dengan mudah..**\n\n❓ **Untuk mengetahui cara menggunakan saya, silakan tekan tombol bantuan di bawah ini** 👇🏻",
-                    reply_markup=InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(
-                             "ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/knsgnwn")
-                       ],[
-                          InlineKeyboardButton(
-                             "ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup"),
-                          InlineKeyboardButton(
-                             "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rakasupport")
-                       ],[
-                          InlineKeyboardButton(
-                             "ɪɴғᴏ", callback_data="cbinfo")
-                       ]]
-                    ))
+  await query.edit_message_text(f"👋 𝗪𝗲𝗹𝗰𝗼𝗺𝗲** {message.from_user.mention}
+⚡ **[{BOT_NAME}](https://t.me/{BOT_USERNAME})** 𝙒𝙞𝙡𝙡 𝙋𝙡𝙖𝙮 𝙏𝙝𝙚 𝙎𝙤𝙣𝙜 𝙔𝙤𝙪 𝙒𝙖𝙣𝙩, 𝙉𝙤𝙩 𝙊𝙣𝙡𝙮 𝙏𝙝𝙖𝙩 𝙄 𝘼𝙡𝙨𝙤 𝙃𝙖𝙫𝙚 𝘼 𝙑𝙞𝙙𝙚𝙤 𝙎𝙩𝙧𝙚𝙖𝙢 𝙁𝙚𝙖𝙩𝙪𝙧𝙚!
+
+💡 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 ᴄᴏᴍᴍᴀɴᴅs « !**
+
+❓ **𝗙𝗼𝗿 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻 𝗮𝗯𝗼𝘂𝘁 𝗮𝗹𝗹 𝗳𝗲𝗮𝘁𝘂𝗿𝗲 𝗼𝗳 𝘁𝗵𝗶𝘀 𝗯𝗼𝘁, 𝗷𝘂𝘀𝘁 𝘁𝘆𝗽𝗲 `/help`**
+</b>""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ ᴛᴀᴍʙᴀʜᴋᴀɴ ᴋᴇ ɢʀᴏᴜᴘ ➕",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "ɢʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_GROUP}"
+                    ),
+                    InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rakasupport"),
+                ],
+                [
+                    InlineKeyboardButton("ᴄᴀʀᴀ ᴠɪᴅsᴛʀᴇᴀᴍ", callback_data="cbguide"),
+                    InlineKeyboardButton("ɪɴғᴏ ᴠɪᴅsᴛʀᴇᴀᴍ", callback_data="cbinfo"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", url=f"https://t.me/knsgnwn"),
+                ],
+            ]
+        ),
+    )
 
 @Client.on_callback_query(filters.regex("cbinfo"))
 async def cbinfo(_, query: CallbackQuery):
