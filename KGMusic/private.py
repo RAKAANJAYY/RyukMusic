@@ -10,7 +10,7 @@ from helpers.filters import command
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{BOT_IMAGE}",
+        photo=f"https://telegra.ph/file/c32918f8d474f43d7cfb0.png",
         caption=f"""<b>**👋 𝗪𝗲𝗹𝗰𝗼𝗺𝗲** {message.from_user.mention}
 ⚡ **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 !**
 
@@ -46,7 +46,7 @@ async def start_(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{BOT_IMAGE}",
+        photo=f"https://telegra.ph/file/c32918f8d474f43d7cfb0.png",
         caption=f"""<b>ᴘᴇɴɢᴀᴛᴜʀᴀɴ
 1) ᴊᴀᴅɪᴋᴀɴ ʙᴏᴛ sᴇʙᴀɢᴀɪ ᴀᴅᴍɪɴ
 2) ᴍᴜʟᴀɪ ᴏʙʀᴏʟᴀɴ sᴜᴀʀᴀ
