@@ -42,6 +42,12 @@ async def start_(client: Client, message: Message):
         ),
     )
 
+@Client.on_message(command(["kg", f"kg@{BOT_USERNAME}"]) & ~filters.edited)
+async def help(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"{BOT_IMAGE}",
+        caption=f"""<b>**HAI BAGAIMANA DENGAN FITUR KU?**</b>""",
+
 
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & ~filters.edited)
 async def help(client: Client, message: Message):
