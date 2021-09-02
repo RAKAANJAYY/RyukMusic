@@ -34,7 +34,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton("ᴄᴀʀᴀ ᴠɪᴅsᴛʀᴇᴀᴍ", callback_data="cbguide"),
-                    InlineKeyboardButton("ɪɴғᴏ ᴠɪᴅsᴛʀᴇᴀᴍ", callback_data="cbinfo"),
+                    InlineKeyboardButton("ɪɴғᴏ ᴠɪᴅsᴛʀᴇᴀᴍ", callback_data="cbinfo"
                     ),
                 ],
             ]
