@@ -1,9 +1,9 @@
 {
-    "name": "KGMusic",
-    "logo": "https://telegra.ph/file/d90de32bd8864d38e2467.jpg",
+    "name": "Gohan Music",
+    "logo": "https://telegra.ph/file/6b14ab68ab3dfd4200ca5.jpg",
     "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
     "keywords": ["bot music telegram", "bot musik", "cara membuat bot musik di telegram"],
-    "repository": "https://github.com/kalolonte1/KGMusic",
+    "repository": "https://github.com/Good-Boys-Exe/GohanMusic",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
@@ -63,20 +63,12 @@
             "value": "60"
         }
     },
-    "addons": [],
     "buildpacks": [
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     },
     {
-            "url": "heroku/python"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-    "stack": "heroku-20"
+      "url": "heroku/python"
+    }
+  ]
 }
