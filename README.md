@@ -16,7 +16,7 @@
 
 </p>
 Cara termudah untuk membuat Bot ini
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/kalolonte1/KGMusic"><img src="https://img.shields.io/badge/DEPLOY KE-HEROKU-blue?style=plastic&logo=heroku&logoColor=yellow"width="300"heigh="100" /></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/RAKAANJAYY/RyukMusic"><img src="https://img.shields.io/badge/DEPLOY KE-HEROKU-blue?style=plastic&logo=heroku&logoColor=yellow"width="300"heigh="100" /></a></p>
 
 Dapatkan STRING SESSION klik tombol dibawah untuk mendapatkan string (P)
 
