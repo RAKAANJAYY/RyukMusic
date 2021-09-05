@@ -516,7 +516,7 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                     [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
-                    InlineKeyboardButton("キラKira", url=f"https://t.me/{OWNER}")],
+                    InlineKeyboardButton("キラKira", url=f"https://t.me/Z_alfgn")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
             ]
         )
@@ -608,7 +608,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                     [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
-                    InlineKeyboardButton("キラKira", url=f"https://t.me/{OWNER}")],
+                    InlineKeyboardButton("キラKira", url=f"https://t.me/Z_alfgn")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
             ]
             )
@@ -715,7 +715,7 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                     [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
-                    InlineKeyboardButton("キラKira", url=f"https://t.me/{OWNER}")],
+                    InlineKeyboardButton("キラKira", url=f"https://t.me/Z_alfgn")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
             ]
     )
@@ -864,7 +864,7 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                     [InlineKeyboardButton("ᴘʟᴀʏʟɪsᴛ", callback_data="playlist"),
-                    InlineKeyboardButton("キラKira", url=f"https://t.me/{OWNER}")],
+                    InlineKeyboardButton("キラKira", url=f"https://t.me/Z_alfgn")],
                     [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="cls")],
             ]
     )
