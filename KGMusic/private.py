@@ -10,7 +10,7 @@ from helpers.filters import command
 @Client.on_message(command("start") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{BOT_IMAGE}",
+        photo=f"https://telegra.ph/file/7bf9f848e1c2edf2b8e33.jpg",
         caption=f"""<b>𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙃𝙀𝙇𝙇
 👹 ᴍʏ ɴᴀᴍᴇ ɪs [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 
@@ -42,7 +42,7 @@ async def start_(client: Client, message: Message):
 @Client.on_message(command(["help", f"help@{BOT_USERNAME}"]) & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
-        photo=f"{BOT_IMAGE}",
+        photo=f"https://telegra.ph/file/7bf9f848e1c2edf2b8e33.jpg",
         caption=f"""<b>📖𝑹𝑼𝑳𝑬𝑺 𝑵𝑶𝑻𝑬 𝑩𝑶𝑶𝑲📖
 1) Make キラKira As Admin
 2) Turn on Voice Chat
