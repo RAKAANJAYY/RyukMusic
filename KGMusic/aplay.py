@@ -18,7 +18,7 @@ from helpers.gets import get_file_name, get_url
 @errors
 async def aplay(_, message: Message):
 
-    lel = await message.reply("🕵🏻‍♂️ **ᴍᴇᴍᴘʀᴏsᴇs** ᴀᴜᴅɪᴏ...")
+    lel = await message.reply("🔁 **リュークRyuk Processing Audio...**")
     message.from_user.id
     message.from_user.first_name
 
@@ -26,7 +26,7 @@ async def aplay(_, message: Message):
         [
             [
                 InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_GROUP}"),
-                InlineKeyboardButton("ᴏᴡɴᴇʀ", url=f"https://t.me/knsgnwn"),
+                InlineKeyboardButton("キラKira", url=f"https://t.me/{OWNER}"),
             ]
         ]
     )
@@ -41,7 +41,7 @@ async def aplay(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"⚠️ ᴠɪᴅᴇᴏ ʟᴇʙɪʜ ᴘᴀɴᴊᴀɴɢ ᴅᴀʀɪ {DURATION_LIMIT} ᴍᴇɴɪᴛ ᴛɪᴅᴀᴋ ᴅɪᴘᴇʀʙᴏʟᴇʜᴋᴀɴ ᴜɴᴛᴜᴋ ʙᴇʀᴍᴀɪɴ!"
+                f"👹 **リュークRyuk Cannot Play More Than** {DURATION_LIMIT} !"
             )
 
         file_name = get_file_name(audio)
@@ -53,17 +53,17 @@ async def aplay(_, message: Message):
     elif url:
         file_path = await converter.convert(youtube.download(url))
     else:
-        return await lel.edit_text("⚠️ ᴀɴᴅᴀ ᴛɪᴅᴀᴋ ᴍᴇᴍʙᴇʀɪ sᴀʏᴀ ᴀᴘᴀᴘᴜɴ ᴜɴᴛᴜᴋ ᴅɪᴘᴇʀᴍᴀɪɴᴋᴀɴ!")
+        return await lel.edit_text("👹 **You Didn't Write Something On The Death Note!**")
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
-        await lel.edit(f"#⃣ **ᴀɴᴛʀɪᴀɴ** ᴅɪ ᴘᴏsɪsɪ {position}!")
+        await lel.edit(f"🔢 **Queue In Position** {position}!")
     else:
         callsmusic.pytgcalls.join_group_call(message.chat.id, file_path)
         await message.reply_photo(
             photo=f"{bi}",
             reply_markup=keyboard,
-            caption="⚡ **ᴍᴇᴍᴜᴛᴀʀ** sᴇʙᴜᴀʜ ʟᴀɢᴜ ᴏʟᴇʜ {}!".format(
+            caption="🖋️ **Running Tasks From** {}!".format(
                 message.from_user.mention()
             ),
         )

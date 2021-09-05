@@ -6,34 +6,33 @@ class Messages:
     HELPS_MSG = [
         ".",
         f"""
-<b>👋🏻 ʜᴀʟʟᴏ sᴇʟᴀᴍᴀᴛ ᴅᴀᴛᴀɴɢ ᴋᴇᴍʙᴀʟɪ ᴅɪ {bn}
+<b>👋🏻 **Hello Welcome Back to** {bn}
 
-⚡ {bn} ᴀᴋᴀɴ ᴍᴇᴍʙᴀɴᴛᴜ ᴀɴᴅᴀ ᴜɴᴛᴜᴋ ᴍᴇʀɪᴀʜᴋᴀɴ ɢʀᴜᴘ ᴀɴᴅᴀ.
+✣️ {bn} Can Run Tasks You Write In Death Note.
 
-☞ ᴀssɪsᴛᴀɴᴛ ᴍᴜsɪᴄ » @{an}</b>
+✣️ リュークRyuk » @{an}</b>
 """,
         f"""
-<b>ᴘᴇɴɢᴀᴛᴜʀᴀɴ
-1) ᴊᴀᴅɪᴋᴀɴ ʙᴏᴛ sᴇʙᴀɢᴀɪ ᴀᴅᴍɪɴ
-2) ᴍᴜʟᴀɪ ᴏʙʀᴏʟᴀɴ sᴜᴀʀᴀ
-3) ᴋɪʀɪᴍ ᴘᴇʀɪɴᴛᴀʜ » /userbotjoin
-➢ ᴊɪᴋᴀ ᴀssɪsᴛᴀɴᴛ ᴛᴇʟᴀʜ ʙᴇʀɢᴀʙᴜɴɢ sᴇʟᴀᴍᴀᴛ ᴍᴇɴɪᴋᴍᴀᴛɪ, 
-➢ ᴊɪᴋᴀ ᴀssɪsᴛᴀɴᴛ ᴛɪᴅᴀᴋ ʙɪsᴀ ʙᴇʀɢᴀʙᴜɴɢ,sɪʟᴀᴋᴀɴ ᴍᴀsᴜᴋᴀɴ @{an} ᴋᴇ ɢʀᴜᴘ ᴀɴᴅᴀ sᴇᴄᴀʀᴀ ᴍᴀɴᴜᴀʟ</b>
+<b>📖𝑹𝑼𝑳𝑬𝑺 𝑵𝑶𝑻𝑬 𝑩𝑶𝑶𝑲📖
+1) Make キラKira As Admin
+2) Turn on Voice Chat
+3) Write /userbotjoin in Death Note.
+• If リュークRyuk Joins, Enjoy Music.</b>
 """,
         f"""
-<b>ᴘᴇʀɪɴᴛᴀʜ sᴇᴍᴜᴀ ᴀɴɢɢᴏᴛᴀ
-➢ /play (judul lagu) - ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ʏᴀɴɢ ᴀɴᴅᴀ ᴍɪɴᴛᴀ
-➢ /aplay (balas ke audio) - ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ᴅᴀʀɪ ᴀᴜᴅɪᴏ ғɪʟᴇ
-➢ /ytplay (judul lagu) - ᴜɴᴛᴜᴋ ᴍᴇᴍᴜᴛᴀʀ ʟᴀɢᴜ ʏᴀɴɢ ᴀɴᴅᴀ ᴍɪɴᴛᴀ ᴛᴀɴᴘᴀ ᴘɪʟɪʜᴀɴ
-➢ /song (judul lagu) - ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ʟᴀɢᴜ ᴅᴀʀɪ ʏᴏᴜᴛᴜʙᴇ
-➢ /vsong (judul video) - ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴏᴡɴʟᴏᴀᴅ ᴠɪᴅᴇᴏ ᴅᴀʀɪ ʏᴏᴜᴛᴜʙᴇ
-➢ /lyrics (judul lagu) ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ʟɪʀɪᴋ ʟᴀɢᴜ
-➢ /search (judul lagu/video) - ᴜɴᴛᴜᴋ ᴍᴇɴᴄᴀʀɪ ʟɪɴᴋ ᴅɪ ʏᴏᴜᴛᴜʙᴇ ᴅᴇɴɢᴀɴ ᴅᴇᴛᴀɪʟ<b>
-</b>\n\nᴘᴇʀɪɴᴛᴀʜ sᴇᴍᴜᴀ ᴀᴅᴍɪɴ ɢʀᴜᴘ
-➢ /pause - ᴜɴᴛᴜᴋ ᴍᴇɴᴊᴇᴅᴀ ᴘᴇᴍᴜᴛᴀʀᴀɴ ʟᴀɢᴜ
-➢ /resume - ᴜɴᴛᴜᴋ ᴍᴇʟᴀɴᴊᴜᴛᴋᴀɴ ᴘᴇᴍᴜᴛᴀʀᴀɴ ʟᴀɢᴜ
-➢ /skip - ᴜɴᴛᴜᴋ ᴍᴇʟᴏᴍᴘᴀᴛɪ ᴋᴇ ʟᴀɢᴜ sᴇʟᴀɴᴊᴜᴛɴʏᴀ
-➢ /end - ᴜɴᴛᴜᴋ ᴍᴇᴍʙᴇʀʜᴇɴᴛɪᴋᴀɴ ᴘᴇᴍᴜᴛᴀʀᴀɴ ʟᴀɢᴜ
-➢ /reload - ᴜɴᴛᴜᴋ sᴇɢᴀʀᴋᴀɴ ᴅᴀғᴛᴀʀ ᴀᴅᴍɪɴ</b>
+<b>Commands of All Death Note Owners
+• /play (song title) — To Play the song you requested via YouTube
+• /aplay (reply to audio) - To Play Song From Audio File
+• /ytplay (song title) — To Play the song you requested via YouTube Without Options
+• /song (song title) - To Download songs from YouTube
+• /vsong (video title) - To Download Videos on YouTube
+• /lyrics (song title) To Search Song Lyrics
+• /search (song/video title) – To Search YouTube Links With Detail<b>
+</b>\n\nCommand all group admins
+• /pause - To Pause Song playback
+• /resume - To resume playback of the paused Song
+• /skip - To Skip playback of the song to the next Song
+• /end - To Stop Song playback
+• /reload - To Refresh admin list</b>
 """,
     ]

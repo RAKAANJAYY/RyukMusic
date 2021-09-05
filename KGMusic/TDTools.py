@@ -14,7 +14,7 @@ async def asupan(client, message):
     try:
         resp = requests.get("https://api-tede.herokuapp.com/api/asupan/ptl").json()
         results = f"{resp['url']}"
-        return await client.send_video(message.chat.id, video=results, caption=f"𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup")
+        return await client.send_video(message.chat.id, video=results, caption=f"𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 @deathnotesupport")
     except Exception:
         await message.reply_text("Ada yang salah LOL...")
 
@@ -24,7 +24,7 @@ async def wibu(client, message):
     try:
         resp = requests.get("https://api-tede.herokuapp.com/api/asupan/wibu").json()
         results = f"{resp['url']}"
-        return await client.send_video(message.chat.id, video=results, caption=f"𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup")
+        return await client.send_video(message.chat.id, video=results, caption=f"𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 @deathnotesupport")
     except Exception:
         await message.reply_text("Ada yang salah LOL...")
 
@@ -34,7 +34,7 @@ async def chika(client, message):
     try:
         resp = requests.get("https://api-tede.herokuapp.com/api/chika").json()
         results = f"{resp['url']}"
-        return await client.send_video(message.chat.id, video=results, caption=f"𝙋𝙊𝙒𝙀𝙍𝙀𝘿 𝘽𝙔 @KGSupportgroup")
+        return await client.send_video(message.chat.id, video=results, caption=f"𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 @deathnotesupport")
     except Exception:
         await message.reply_text("Ada yang salah LOL...")
 

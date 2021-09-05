@@ -14,9 +14,9 @@ async def broadcast(_, message: Message):
     failed = 0
     if message.from_user.id not in SUDO_USERS:
         return
-    wtf = await message.reply("`ᴍᴜʟᴀɪ ʙʀᴏᴀᴅᴄᴀsᴛ...`")
+    wtf = await message.reply("`Starting a Channel Hack...`")
     if not message.reply_to_message:
-        await wtf.edit("ᴍᴏʜᴏɴ ʙᴀʟᴀs ᴘᴇsᴀɴ!")
+        await wtf.edit("Please reply to the message you want to spread!")
         return
     lmao = message.reply_to_message.text
     async for dialog in USER.iter_dialogs():
@@ -24,15 +24,15 @@ async def broadcast(_, message: Message):
             await USER.send_message(dialog.chat.id, lmao)
             sent = sent + 1
             await wtf.edit(
-                f"`ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ...` \n\n**ᴅɪᴋɪʀɪᴍ ᴋᴇ:** `{sent}` ᴏʙʀᴏʟᴀɴ \n**ɢᴀɢᴀʟ ᴅɪᴋɪʀɪᴍ:** {failed} ᴏʙʀᴏʟᴀɴ"
+                f"`Hacking...` \n\n**Send To:** `{sent}` Channel \n**Hack Failed:** {failed} Channel"
             )
             await asyncio.sleep(3)
         except:
             failed = failed + 1
             await wtf.edit(
-                f"`ʙʀᴏᴀᴅᴄᴀsᴛɪɴɢ...` \n\n**ᴅɪᴋɪʀɪᴍ ᴋᴇ:** `{sent}` ᴏʙʀᴏʟᴀɴ \n**ɢᴀɢᴀʟ ᴅɪᴋɪʀɪᴍ:** {failed} ᴏʙʀᴏʟᴀɴ"
+                f"`Hacking...` \n\n**Send To:** `{sent}` Channel \n**Hack Failed:** {failed} Channel"
             )
 
     return await wtf.edit(
-        f"`ʙʀᴏᴀᴅᴄᴀsᴛ sᴇʟᴇsᴀɪ` \n\n**ᴅɪᴋɪʀɪᴍ ᴋᴇ:** `{sent}` ᴏʙʀᴏʟᴀɴ \n**ɢᴀɢᴀʟ ᴅɪᴋɪʀɪᴍ:** {failed} ᴏʙʀᴏʟᴀɴ"
+        f"`Hacking...` \n\n**Send To:** `{sent}` Channel \n**Hack Failed:** {failed} Channel"
     )

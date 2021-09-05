@@ -22,7 +22,7 @@ async def update_admin(client, message):
         new_ads.append(u.user.id)
     a[message.chat.id] = new_ads
     await message.reply_text(
-        "✅ Bot reloaded correctly!\n\n• The Admin list has been updated."
+        "👹 **リュークRyuk Reload Successful!**\n\n• **Death Note Has Been Updated.**"
     )
 
 
@@ -33,11 +33,11 @@ async def pause(_, message: Message):
     if (message.chat.id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[message.chat.id] == "paused"
     ):
-        await message.reply_text("📛 **No song is playing!**")
+        await message.reply_text("👹 **I Can't Find Something In Death Noter!**")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
         await message.reply_text(
-            "**⏸️ Music paused!**\n\n💡 For resuming the song, use command » /resume"
+            "**👹 リュークRyuk  Pausing Song.**\n\n• To continue playback, write /resume in Death Note."
         )
 
 
@@ -48,11 +48,11 @@ async def resume(_, message: Message):
     if (message.chat.id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[message.chat.id] == "playing"
     ):
-        await message.reply_text("📛 **Can't find the currently paused song!**")
+        await message.reply_text("👹 **I Can't Find Something In Death Noter!**")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
         await message.reply_text(
-            "**⚡ Music resumed!**\n\n💡 For end the song, use command » /end"
+            "**👹 リュークRyuk Resume Song Playback**\n\n• To End, Write /end in Death Note"
         )
 
 
@@ -61,7 +61,7 @@ async def resume(_, message: Message):
 @authorized_users_only
 async def stop(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("📛 **No song is playing!**")
+        await message.reply_text("👹 **I Can't Find Something In Death Noter!**")
     else:
         try:
             callsmusic.queues.clear(message.chat.id)
@@ -69,7 +69,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("**✅ Streaming ended**\n\n• Assistant has been disconnected from voice chat group")
+        await message.reply_text("**👹 リュークRyuk Has Disconnected From Chat.**")
 
 
 @Client.on_message(command(["skip", f"skip@{BOT_USERNAME}"]) & other_filters)
@@ -78,7 +78,7 @@ async def stop(_, message: Message):
 async def skip(_, message: Message):
     global que
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("📛 **No songs in queue!**")
+        await message.reply_text("👹 **I Can't Find Something In Death Noter!**")
     else:
         callsmusic.queues.task_done(message.chat.id)
 
@@ -94,5 +94,5 @@ async def skip(_, message: Message):
     if not qeue:
         return
     await message.reply_text(
-        f"**💡 You jump to the next song queue..**\n┈┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┈**\n➠ skipped :** {skip[0]}\n**⚡ now playing :** {qeue[0][0]}"
+        f"**👹 リュークRyuk Passing The Target**\n**▶️ Next Goal:** {qeue[0][0]}"
     )

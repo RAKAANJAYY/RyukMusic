@@ -39,20 +39,14 @@ async def start(client: Client, message: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await message.reply_text(
-        f"""✅ **{bn}** sᴇᴅᴀɴɢ ᴏɴʟɪɴᴇ!\n<b>ᴡᴀᴋᴛᴜ ᴏɴʟɪɴᴇ:</b> `{uptime}`""",
+        f"""👹 **リュークRyuk** Active!\n<b>Active Time:</b> `{uptime}`""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("ɢʀᴏᴜᴘ", url=f"https://t.me/KGSupportgroup"),
+                    InlineKeyboardButton("キラKira", url=f"https://t.me/{OWNER}"),
                     InlineKeyboardButton(
-                        "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rakasupport"
+                        "ɢʀᴏᴜᴘ", url=f"https://t.me/{SUPPORT_GROUP}"
                     ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "ᴅᴇᴠᴇʟᴏᴘᴇʀ",
-                        url="https://t.me/knsgnwn",
-                    )
                 ],
             ]
         ),
@@ -62,7 +56,7 @@ async def start(client: Client, message: Message):
 @Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 async def ping_pong(client: Client, m: Message):
     start = time()
-    m_reply = await m.reply_text("⚡")
+    m_reply = await m.reply_text("😈")
     delta_ping = time() - start
     await m_reply.edit_text(
         f"{emoji.PING_PONG} **PONG!!**\n" f"`{delta_ping * 1000:.3f} ms`"
@@ -76,7 +70,7 @@ async def get_uptime(client: Client, m: Message):
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m.reply_text(
-        f"{emoji.ROBOT} Status\n"
-        f"• **ᴡᴀᴋᴛᴜ ᴀᴋᴛɪғ:** `{uptime}`\n"
-        f"• **ᴡᴀᴋᴛᴜ ᴍᴜʟᴀɪ:** `{START_TIME_ISO}`"
+        f"👹 Status\n"
+        f"• **ᴀᴄᴛɪᴠᴇ ᴛɪᴍᴇ:** `{uptime}`\n"
+        f"• **sᴛᴀʀᴛ ᴛɪᴍᴇ:** `{START_TIME_ISO}`"
     )
